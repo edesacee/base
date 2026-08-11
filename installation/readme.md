@@ -23,7 +23,7 @@ Locate the `extra` object in your `composer.json` file and update the `__UNIQUE_
 }
 ```
 
-> 💡 **Note:** Replace `__UNIQUE_ID__` with your plugin's unique ID in **UPPERCASE**. This will properly apply the namespace `YOUR_PLUGIN_ID_UPPERCASE\Flowy` to the classes.
+> 💡 **Note:** Replace `__UNIQUE_ID__` with your plugin's unique ID in **UPPERCASE**. This will properly apply the namespace `__UNIQUE_ID__\Flowy` to the classes.
 
 ---
 
@@ -38,4 +38,13 @@ const prefix = 'your_plugin_id_lowercase';
 > 💡 **Note:** Replace `__unique_id__` with your plugin's unique ID in **LOWERCASE**.
 
 
-Once done, open terminal in your plugin folder and run `composer install`.
+## 📄 3. Download the package
+Open terminal in your plugin folder and run `composer install`.
+
+## 📄 4. Load the classes
+```
+if ( file_exists( __DIR__ . '/app/vendor/autoload.php' ) ) {
+    require_once __DIR__ . '/app/vendor/autoload.php';
+}
+```
+
