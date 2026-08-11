@@ -1,0 +1,8 @@
+{
+    "name": "edesacee/flowy-core",
+    "autoload": {
+        "psr-4": {
+            "FlowyCore\\": "src/"
+        }
+    }
+}
