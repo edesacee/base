@@ -2,7 +2,7 @@
 
 Please complete the following configuration steps before running the project.
 
-Copy composer.json and prp-flowy-core.js to the root of your plugin folder.
+Copy composer.json and prp-flowy-core.js in the root of your plugin folder.
 
 ---
 
