@@ -2,6 +2,8 @@
 
 Please complete the following configuration steps before running the project.
 
+Copy composer.json and prp-flowy-core.js to the root of your plugin folder.
+
 ---
 
 ## 📄 1. Update `composer.json`
@@ -34,3 +36,6 @@ const prefix = 'your_plugin_id_lowercase';
 ```
 
 > 💡 **Note:** Replace `__unique_id__` with your plugin's unique ID in **LOWERCASE**.
+
+
+Once done, open terminal in your plugin folder and run `composer install`.
