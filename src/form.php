@@ -246,6 +246,7 @@ abstract class Form {
         $user_input = isset($_POST[$key_id]) ? map_deep(wp_unslash($_POST[$key_id]), 'sanitize_textarea_field') : ''; //isset($_POST[$key_id]) ? array_map('esc_attr', $_POST[$key_id]) : null;
 
         $obj = new $class($key_id);
+        $files2 = '';
         $data = $obj->saveForm($user_input, $files2);
         $data ['function'] = str_replace('-', '', $key_id) . 'Success';        
         
@@ -340,7 +341,7 @@ abstract class Form {
         }
 
         $user_input = isset($_POST[$key_id]) ? map_deep(wp_unslash($_POST[$key_id]), 'sanitize_textarea_field') : ''; //isset($_POST[$key_id]) ? array_map('esc_attr', $_POST[$key_id]) : null;
-
+        $files2 = '';
         $data = $obj->saveForm($user_input, $files2);
         $data ['function'] = str_replace('-', '', $key_id) . 'Success';    
         $data ['files'] = $files2;
